@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.cucumber:datatable-matchers:3.4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/datatable-matchers/3.4.0/4e46020f10ee714be0b5d4fa23c27640edb39d87/datatable-matchers-3.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/datatable-matchers/3.4.0/999775c8652804be11f10f7d47e25ded8cb52cfb/datatable-matchers-3.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

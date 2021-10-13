@@ -1,0 +1,50 @@
+group 'co.com.prueba'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.3.12")
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation group: 'net.serenity-bdd', name: 'serenity-core', version: '2.3.9'
+    testImplementation group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.3.9'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.3.9'
+    implementation group: 'net.serenity-bdd', name: 'serenity-cucumber6', version: '2.4.34'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-rest', version: '2.3.9'
+
+
+
+    implementation group: 'jline', name: 'jline', version: '2.13'
+    testImplementation 'org.assertj:assertj-core:3.21.0'
+    testImplementation 'org.slf4j:slf4j-simple:1.7.32'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.12'
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+
+}
+
+gradle.startParameter.continueOnFailure = true
+
+task variables(type: Test) {
+    systemProperty 'userAP', System.getProperty('userAP')
+    systemProperty 'passAP', System.getProperty('passAP')
+    systemProperty 'releaseId', System.getProperty('releaseId')
+}

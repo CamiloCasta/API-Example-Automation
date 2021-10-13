@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Consumo apis de prueba" skipped="0" tests="4" time="13.16" timestamp="2021-10-13 06:05:19"><testcase name="Registro nuevo usuario"/><testcase name="Consultar registro"/><testcase name="Comentar registro"/><testcase name="Eliminar usuario"/></testsuite>
